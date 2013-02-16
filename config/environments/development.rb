@@ -1,3 +1,6 @@
+# Force logs to flush so they're visible in Foreman's output.
+$stdout.sync = true
+
 MersWeb::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 

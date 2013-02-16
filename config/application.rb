@@ -58,5 +58,8 @@ module MersWeb
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Enable quieter logging.
+    config.lograge.enabled = true
   end
 end
