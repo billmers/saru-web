@@ -1,1 +1,1 @@
-web: bundle exec rails server -p $PORT thin -e $RACK_ENV
+web: bundle exec puma --port $PORT --environment $RACK_ENV --threads 0:4 --quiet
