@@ -4,4 +4,13 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-MersWeb::Application.config.secret_token = 'e1e98563c1a9fa5a25697f11d50ca809f919e28ee4c5d72c92c57b4935e6be2bcf74fcd2c5c9d663f0c2b59b7b5fc8298f63ec42286af4524b05fc28e8dc2a4b'
+
+# heroku config:set COOKIE_TOKEN=`rake secret`
+# Read token from environment var to play nice with Heroku.
+if Rails.env.production?
+  token = ENV['COOKIE_TOKEN']
+else
+  token = 'ab619bf90f0cde43cae5788a54be2af3c0357eb39fd18486b7c124dcc682979a677c78d98b77c8453f3b294c583b0c24b5bd7bc2384808973c1dc763e6975d40'
+end
+
+MersWeb::Application.config.secret_token = token
