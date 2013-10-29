@@ -3,7 +3,7 @@
   [
     {
       "path": ".",
-      "name": "saruweb",
+      "name": "saru-web",
       "folder_exclude_patterns": [".bundle", "log", "tmp"],
       "file_exclude_patterns":
       [
