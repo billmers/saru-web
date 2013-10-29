@@ -1,32 +1,6 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
+ruby "1.9.3"
 
-ruby '1.9.3'
-gem 'rails', '3.2.13'
-
-gem 'lograge'
-gem 'newrelic_rpm'
-gem 'puma'
-
-gem 'jquery-rails'
-gem 'slim'
-
-group :development do
-  gem 'awesome_print'
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  gem 'foreman'
-end
-
-group :development, :test do
-  gem 'sqlite3'
-end
-
-group :production do
-  gem 'pg'
-end
-
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier',     '>= 1.0.3'
-end
+gem "foreman"
+gem "puma"
+gem "sinatra"

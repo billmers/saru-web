@@ -1,0 +1,15 @@
+body {
+  font: normal 72.5% Tahoma,sans-serif;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 70pt;
+  font-weight: normal;
+  text-align: center;
+  color: #000;
+}
+h2 {
+  text-align: center;
+  color: white;
+}
